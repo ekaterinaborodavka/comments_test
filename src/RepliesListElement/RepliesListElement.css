@@ -1,0 +1,38 @@
+.Replies_List_Element_Wrapper{
+    display: flex;
+    margin: 1.5rem auto 1.5rem 7.5rem;
+
+}
+
+.Replies_List_Element_Avatar{
+    border: 1px solid #CDD7E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
+}
+
+.Replies_List_Element_Info_wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.Replies_List_Element_Info{
+    display: flex;
+}
+
+.Replies_List_Element_Date, .Replies_List_Element_AnswerTo{
+    color: #697082;
+    font-size: 12px;
+    margin-right: 0.5rem;
+}
+
+.Replies_List_Element_Name{
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.Replies_List_Element_Body{
+    margin-top: 1rem;
+}
