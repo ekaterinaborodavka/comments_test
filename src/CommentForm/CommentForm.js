@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import { shallowEqual, useSelector, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import * as actions from '../Store/actions/actions';
 import { avatar } from '../utils';
@@ -56,4 +57,9 @@ export const CommentForm = (props) => {
       </form>
     </div>
   );
+};
+
+CommentForm.propTypes = {
+  withAvatar: PropTypes.bool,
+  onText: PropTypes.string
 };

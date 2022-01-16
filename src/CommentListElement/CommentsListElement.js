@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import { useDispatch, shallowEqual, useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import { CommentForm } from '../CommentForm/CommentForm';
 import { RepliesListElement } from '../RepliesListElement/RepliesListElement';
@@ -77,4 +78,15 @@ export const CommentListElement = ({comment}) => {
         }) : null }
     </div>
   );
+};
+
+CommentListElement.propTypes = {
+  comment: PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    body: PropTypes.string,
+    avatar: PropTypes.string,
+    date: PropTypes.number,
+    replies: PropTypes.array
+  }),
 };

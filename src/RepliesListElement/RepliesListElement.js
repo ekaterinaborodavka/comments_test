@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './RepliesListElement.css';
 
@@ -20,4 +21,18 @@ export const RepliesListElement = (props) => {
       </div>
     </div>
   );
+};
+
+RepliesListElement.propTypes = {
+  comment: PropTypes.shape({
+    nameToAnswer: PropTypes.string,
+    replies: PropTypes.shape({
+      id: PropTypes.number,
+      commentId: PropTypes.number,
+      name: PropTypes.string,
+      body: PropTypes.string,
+      avatar: PropTypes.string,
+      date: PropTypes.number,
+    })
+  }),
 };
